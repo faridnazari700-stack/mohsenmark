@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mohsenmark.ir | فروش پلاک فلزی</title>
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet">
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+body {
+  font-family:Vazir,Arial,sans-serif;
+  background:#0b0b0b;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* ================= HEADER ================= */
+header {
+  background:linear-gradient(135deg,#2af598,#7b2ff7);
+  padding:100px 20px 70px;
+  text-align:center;
+  position:relative;
+}
+
+/* تقویم شمسی بزرگ */
+#shamsiCalendar {
+  position:absolute;
+  top:20px;
+  left:30px;
+  font-size:28px; /* اندازه دو برابر */
+  background:rgba(255,255,255,.18);
+  padding:12px 24px;
+  border-radius:12px;
+  backdrop-filter:blur(6px);
+  color:#fff;
+  font-weight:bold;
+}
+
+/* عنوان سایت */
+header h1 {
+  font-size:58px;
+  background:linear-gradient(90deg,#fff,#c2f0fc);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.subtitle p {
+  margin:8px 0;
+  font-size:18px;
+}
+
+/* ===== Social Icons ===== */
+.social-wrapper {
+  position:absolute;
+  top:20px;
+  right:30px;
+  text-align:center;
+}
+.social-wrapper span {
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:6px;
+  display:block;
+}
+.social-icons {
+  display:flex;
+  gap:14px;
+  justify-content:center;
+}
+.social-icons a {
+  width:44px;
+  height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  transition: transform 0.35s ease;
+}
+.social-icons svg {
+  width:100%;
+  height:100%;
+  fill:#fff; /* سفید پیش‌فرض */
+  transition: fill 0.3s ease, transform 0.35s ease;
+}
+.social-icons a:hover svg {
+  transform: scale(1.3) rotate(8deg);
+}
+.social-icons a.instagram:hover svg { fill: #E1306C; }
+.social-icons a.telegram:hover svg { fill: #0088CC; }
+.social-icons a.whatsapp:hover svg { fill: #25D366; }
+
+/* ===== Channel Button ===== */
+.channel {
+  margin-top:14px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 18px;
+  border-radius:14px;
+  background:rgba(255,255,255,.18);
+  backdrop-filter:blur(6px);
+  transition:transform .35s ease, box-shadow .35s ease, background .35s ease;
+}
+.channel a {
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+.channel svg {
+  width:26px;
+  height:26px;
+  fill:#fff;
+}
+.channel:hover {
+  transform:translateY(-6px) scale(1.06);
+  box-shadow:0 14px 34px rgba(0,0,0,.45);
+  background:rgba(255,255,255,.28);
+}
+
+/* ================= PRODUCTS ================= */
+.products {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  padding:70px 20px;
+}
+.card {
+  background:#1c1c1c;
+  border-radius:20px;
+  padding:35px;
+  text-align:center;
+  transition:transform .4s ease, box-shadow .4s ease;
+}
+.card:hover {
+  transform:translateY(-8px);
+  box-shadow:0 20px 40px rgba(0,0,0,.5);
+}
+.card h3 {
+  color:#2af598;
+  margin-bottom:10px;
+}
+
+/* ================= PORTFOLIO ================= */
+.portfolio {
+  background:#111;
+  padding:60px 0;
+  overflow:hidden;
+  direction:ltr;
+}
+.portfolio h2 {
+  direction:rtl;
+  text-align:center;
+  color:#2af598;
+  margin-bottom:30px;
+  font-size:30px;
+}
+.track {
+  display:flex;
+  width:max-content;
+  animation:scroll 30s linear infinite;
+}
+.item {
+  flex:0 0 auto;
+  width:220px;
+  height:160px;
+  margin:0 12px;
+  border-radius:16px;
+  overflow:hidden;
+  background:#333;
+}
+.item img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+@keyframes scroll {
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+
+/* ================= CONTACT ================= */
+.contact {
+  background:linear-gradient(135deg,#2af598,#7b2ff7);
+  margin:90px 20px;
+  padding:50px;
+  border-radius:22px;
+text-align:center;
+}
+.call {
+  display:inline-block;
+  margin-top:20px;
+  padding:18px 44px;
+  background:#000;
+  color:#fff;
+  border-radius:16px;
+  text-decoration:none;
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.call:hover {
+  transform:scale(1.1);
+  box-shadow:0 12px 32px rgba(0,0,0,.5);
+}
+
+footer {
+  background:#111;
+  text-align:center;
+  padding:30px;
+  font-size:14px;
+}
+</style>
+</head>
+<body>
+<header>
+  <div id="shamsiCalendar"></div>
+  <h1>mohsenmark.ir</h1>
+  <div class="subtitle">
+    <p>ساخت انواع پلاک فلزی</p>
+    <p>بیش از ۲۰ سال سابقه کاری</p>
+    <p>تحویل سریع | ارسال سراسری</p>
+  </div>
+
+  <div class="social-wrapper">
+    <span>راه‌های تماس</span>
+    <div class="social-icons">
+      <!-- اینستاگرام درست -->
+      <a href="https://instagram.com/mohsenmark.ir" target="_blank" class="instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M224.1 141c-63.6 0-115 51.4-115 115s51.4 115 115 115 115-51.4 115-115-51.4-115-115-115zm0 190c-41.4 0-75-33.6-75-75s33.6-75 75-75 75 33.6 75 75-33.6 75-75 75zm146.4-194.1c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-.1-54.5-44.4-98.8-98.9-98.9H102.4c-54.5.1-98.8 44.4-98.9 98.9v245.1c.1 54.5 44.4 98.8 98.9 98.9h245.2c54.5-.1 98.8-44.4 98.9-98.9V164.1zm-48.1 245.2c0 27.2-22.1 49.3-49.3 49.3H102.4c-27.2 0-49.3-22.1-49.3-49.3V164.1c0-27.2 22.1-49.3 49.3-49.3h245.2c27.2 0 49.3 22.1 49.3 49.3v245.2z"/>
+        </svg>
+      </a>
+      <!-- واتس‌اپ -->
+      <a href="https://wa.me/09123954147" target="_blank" class="whatsapp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163a11.947 11.947 0 0 1-1.52-5.813C.224 5.305 5.48 0 12.063 0c3.203 0 6.214 1.247 8.475 3.507 2.261 2.261 3.506 5.272 3.506 8.476 0 6.583-5.304 11.838-11.837 11.838a11.94 11.94 0 0 1-5.819-1.518L.057 24zm6.597-3.807c1.805.995 3.832 1.591 5.868 1.591 5.448 0 9.87-4.423 9.87-9.868 0-2.623-1.024-5.092-2.879-6.949C17.222 3.016 14.755 2 12.132 2c-5.445 0-9.868 4.422-9.868 9.868 0 2.041.639 3.997 1.843 5.612l-.991 3.622 3.738-.979zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.668.149-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.495.099-.198.05-.372-.025-.521-.074-.149-.668-1.611-.916-2.207-.242-.579-.487-.5-.668-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+        </svg>
+      </a>
+      <!-- تلگرام -->
+      <a href="https://t.me/Aliahmadzadeh222" target="_blank" class="telegram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 0C5.371 0 0 5.372 0 12c0 6.627 5.371 12 12 12 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12zm5.31 8.983l-1.82 8.58c-.136.617-.49.765-1.004.477l-2.77-2.043-1.337 1.288c-.147.147-.27.27-.553.27l.198-2.81 5.113-4.62c.223-.198-.05-.31-.346-.112l-6.32 3.97-2.717-.849c-.592-.184-.603-.592.123-.874l10.62-4.1c.49-.184.918.112.76.874z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="channel">
+      <!-- لوگوی کانال نمونه -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 0C5.371 0 0 5.372 0 12c0 6.627 5.371 12 12 12s12-5.373 12-12C24 5.372 18.627 0 12 0z"/>
+      </svg>
+      <a href="https://t.me/mohsenmarkc" target="_blank">کانال نمونه محصولات</a>
+    </div>
+  </div>
+</header>
+
+<section class="products">
+  <div class="card">
+    <h3>پلاک فلزی صنعتی</h3>
+    <p>مناسب تجهیزات صنعتی، بسیار مقاوم</p>
+  </div>
+  <div class="card">
+    <h3>پلاک فلزی لیزری</h3>
+    <p>حکاکی دقیق با ظاهری شیک</p>
+  </div>
+  <div class="card">
+    <h3>پلاک فلزی سفارشی</h3>
+    <p>طراحی اختصاصی طبق سفارش شما</p>
+  </div>
+</section>
+<section class="portfolio">
+  <h2>نمونه کارها</h2>
+  <div class="track">
+    <div class="item"><img src="1.jpg" alt=""></div>
+    <div class="item"><img src="2.jpg" alt=""></div>
+    <div class="item"><img src="3.jpg" alt=""></div>
+    <div class="item"><img src="4.jpg" alt=""></div>
+    <div class="item"><img src="5.jpg" alt=""></div>
+    <div class="item"><img src="6.jpg" alt=""></div>
+    <div class="item"><img src="7.jpg" alt=""></div>
+    <div class="item"><img src="8.jpg" alt=""></div>
+    <div class="item"><img src="9.jpg" alt=""></div>
+    <div class="item"><img src="10.jpg" alt=""></div>
+    <div class="item"><img src="1.jpg" alt=""></div>
+    <div class="item"><img src="2.jpg" alt=""></div>
+    <div class="item"><img src="3.jpg" alt=""></div>
+    <div class="item"><img src="4.jpg" alt=""></div>
+    <div class="item"><img src="5.jpg" alt=""></div>
+    <div class="item"><img src="6.jpg" alt=""></div>
+    <div class="item"><img src="7.jpg" alt=""></div>
+    <div class="item"><img src="8.jpg" alt=""></div>
+    <div class="item"><img src="9.jpg" alt=""></div>
+    <div class="item"><img src="10.jpg" alt=""></div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>سفارش و مشاوره</h2>
+  <p>📞 09123954147</p>
+  <a class="call" href="tel:09123954147">تماس بگیرید</a>
+</section>
+
+<footer>© mohsenmark.ir</footer>
+
+<script>
+// تبدیل تاریخ میلادی به شمسی
+function gregorian_to_jalali(gy, gm, gd) {
+    var g_d_m=[0,31,59,90,120,151,181,212,243,273,304,334];
+    var gy2 = (gm>2)?(gy+1):gy;
+    var days = 355666 + (365*gy) + Math.floor((gy2+3)/4) - Math.floor((gy2+99)/100) + Math.floor((gy2+399)/400) + gd + g_d_m[gm-1];
+    var jy = -1595 + 33*Math.floor(days/12053);
+    days %= 12053;
+    jy += 4*Math.floor(days/1461);
+    days %= 1461;
+    if(days>365){
+        jy += Math.floor((days-1)/365);
+        days = (days-1)%365;
+    }
+    var jm = (days<186)?1+Math.floor(days/31):7+Math.floor((days-186)/30);
+    var jd = (days<186)?1+(days%31):1+((days-186)%30);
+    return [jy,jm,jd];
+}
+
+function updateShamsiCalendar() {
+    const today = new Date();
+    const shamsi = gregorian_to_jalali(today.getFullYear(), today.getMonth()+1, today.getDate());
+    document.getElementById("shamsiCalendar").textContent = shamsi.join('/');
+}
+
+updateShamsiCalendar();
+setInterval(updateShamsiCalendar, 60000);
+</script>
+</body>
+</html>
